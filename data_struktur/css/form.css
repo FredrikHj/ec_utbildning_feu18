@@ -1,0 +1,46 @@
+/* --------------------------------------- Stilmall formatering av formulären ---------------------------------------
+   Gäller båda formulären */
+		* {box-sizing: border-box;}
+			.row:after {content: ""; clear: both; display: block;}
+
+			[class*="form_col_"] {float: left; padding: 5px; border: 1px none;}
+				/* Namnen nedan med början.col_ ..... representerar enbart min strukturuppbyggnad */
+				 .form_col_1 {width: 8.33%;}
+					.form_col_2 {width: 16.66%;}
+					.form_col_3 {width: 25%;}
+					.form_col_4 {width: 33.33%;}
+					.form_col_5 {width: 41.66%;}
+					.form_col_6 {width: 50%;}
+					.form_col_7 {width: 58.33%;}
+					.form_col_8 {width: 66.66%;}
+					.form_col_9 {width: 75%;}
+					.form_col_10 {width: 83.33%;}
+					.form_col_11 {width: 91.66%;}
+					.form_col_12 {width: 100%;}
+						
+							/* Formateringar för att får element i formulären på sina valda stället | margin: 0 auto; = Elementet blir centrerad */
+						.box_inputs {margin-top: 10px;}
+									.box_order_nospam {margin: 0 auto; margin-top: 60px;}
+									.box_contact_nospam {margin: 0 auto; margin-top: 201px;}
+
+/* Gäller order formuläret; Beställnings id = bid | */
+			.input_form_bid {width: 25px; font-size: 1.2em; font-weight: bold;}
+
+/* Gäller kontakta mig formuläret */
+				.contact_form {margin-left: 200px; width: 50px;} /* Finns i index.html */
+									
+/* Text */
+		legend {font-size: 1em; font-weight: bold;} 
+		.label_for_input {margin-left: 10px; margin-bottom: 20px; font-size: 0.8em; font-weight: bold; letter-spacing: 3px; font-style: italic;}
+		.input_form {margin-left: 20px; width: 150px; font-size: 1em; letter-spacing: 3px;}
+						.input_texarea {margin-left: 20px; width: 293.5px; font-size: 0.9em; letter-spacing: 3px;}
+						#input_form_radio {margin-left: -20px; margin-top: 5px;}
+
+			h1 {text-align: center;}
+
+/* Övrigt */
+		.required {margin-left: -1.5px; margin-bottom: -10px; color: rgb(255, 0, 0 );}
+						.required_textarea {margin-left: 150px; margin-top: -20px; margin-bottom: 10px; color: rgb(255, 0, 0 );}
+		#submit_button {margin-top: 5px;}
+	 
+		#frame_form_data {width: 400px; height: 50px; margin: 0 auto; border: none;}

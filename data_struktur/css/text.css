@@ -1,0 +1,13 @@
+/* --------------------------------------- Stilmall med text formatering --------------------------------------- */
+/* Text hantering */
+			h1, h2{text-align: center;}
+		
+		/* Rubrik = rtext	|	Normal text = ntext*/
+		.rtext	{margin-top: 22px; margin-bottom: 10px; text-align: center; font-size: 1.5em; font-weight: bold;}
+						.rtext_adapt	{margin-top: 22px; margin-bottom: 10px; text-align: center; font-size: 1.2em; font-weight: bold;}
+						
+		.ntext {width: 100%; float: left; height: 250px; overflow-y: auto; background-color: rgb(255, 255, 255);}
+				/* Special för att göra att text omger en bild. Detta fallet omge bilden på "Om mig" sidan. CSS elementet angående bilden finns i [general.css]på rad 47 */		
+						.ommig_ntext {margin-left: 15px; height: 250px; width: 97.9%; overflow-y: auto; background-color: rgb(255, 255, 255);}
+						
+						.imgtext {float: left; font-size: 1em; background-color: rgb(255, 255, 255);}

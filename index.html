@@ -1,0 +1,68 @@
+﻿<!-- Inom "head" taggen kopplar jag min index till minaa sidor och stilmallar i mappen [data_struktur] | Jag ger hemsidan ett namn under taggen "title" -->
+<!doctype html>
+<html lang="sv">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="data_struktur/bilder/feu18logga.png" sizes="16x16">
+			<title>Fredrik Hjärpe - EC Feu18</title>
+
+  	<!-- Inkludera CSS & Javascript -->
+	  	<link rel="stylesheet" type="text/css" href="data_struktur/css/general.css">
+				<link rel="stylesheet" type="text/css" href="data_struktur/css/header_footer.css">
+				<link rel="stylesheet" type="text/css" href="data_struktur/css/maincontents.css">
+
+		<!-- JS inkl jQuery -->
+			<script src="data_struktur/js/jquery_3.3.1.js" defer></script>
+			<script src="data_struktur/js/general.js" defer></script>
+
+		<!-- Google Web Fonts from https://google.github.io/material-design-icons -->
+				<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+	</head>
+	<body onload="loadHeadPage();">
+    <header>
+      <div>
+          <img class="logga" alt="Foto på" title="Fredrik Hjärpe" src="data_struktur/bilder/feu18logga.png" onclick="loadHeadPage()">
+      </div>
+      <nav>
+    		<button id="buttonNav1" class="buttonNavStyle">Om Mig</button>
+				<button id="buttonNav2" class="buttonNavStyle">Projekt</button>
+				<button id="buttonNav3" class="buttonNavStyle">Link3</button>
+				<hr id="hrLineNav">
+    	</nav>
+    </header>
+    <main>
+			<div id="areaSideLeftFrame">
+				<section id="sideBar">
+					<div id="sideBarProject">
+						<p class="sideBarHeadline">Mina Projekt</p>
+						<button id="buttonNav1" class="buttonsSideNavStyle">Link1</button>
+						<button id="buttonNav2" class="buttonsSideNavStyle">Link2</button>
+						<button id="buttonNav3" class="buttonsSideNavStyle">Link3</button>
+					</div>
+				</section>
+
+			</div>
+			<div id="headContentsArea">
+
+			</div>
+			<div id="areaSideRightFrame">
+
+			</div>
+    </main>
+		<footer>
+			<div>
+				<h4>Copyright: Fredrik Hjärpe</h4>
+			</div>
+			<div>
+				<button id="contactFormBtn" onclick="loadContactForm();"><img src="data_struktur/bilder/contact.png" id="contactForm" title="Kontakt formulär"></button>
+				<div id="contactPopUp">
+					<button id="contactFormBtnExit" onload="unloadContactForm();">Avsluta</button>
+				</div>
+			</div>
+			<div id="addDateTime"></div>
+		</footer>
+	</body>
+</html>

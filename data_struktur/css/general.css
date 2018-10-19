@@ -1,0 +1,14 @@
+/* --------------------------------------- Stilmall med generell formatering --------------------------------------- */
+ 	body{
+		margin-left: 0%;
+    margin-top: 0%;
+    width: 100%;
+		font-family: Verdana, Arial, "Times New Roman";
+		font-size: 1.1em;
+		color: rgb(0, 0, 0);
+		background-color: rgb(255, 255, 255);
+	}
+
+    .logga{
+      height: 95%;
+    }

@@ -1,0 +1,109 @@
+<!-- Order formulär och denna har i stort sett allt gemensamnt med sida "contactform.html" förutom att Beställningsdelen saknas. Action delen pekar på annan php fil
+						Det mesta är självförklarande vad de gör
+-->
+<!doctype html>
+<html lang="sv">
+			<head>
+						<meta charset="utf-8">
+						<title>Fredriks 3D Studio: Beställning</title>
+			</head>
+			<body>
+					<div class="rtext">Beställnings formulär</div>
+					<form action="data_struktur/orderform_data.php" method="post" target="insert_formd" autocomplete> 
+								<div class="row">
+											<div class="form_col_6">
+														<fieldset>
+														<legend>Meddelande</legend>
+																	<div class="row box_inputs">
+																				<div class="form_col_5">
+																							<label for="ditt_namn" class="label_for_input">Ditt Namn</label>
+																				</div>
+																				<div class="form_col_7">
+																							<div class="required">*</div>
+																							<input type="text" autofocus id="ditt_namn" name="full_name" class="input_form" placeholder="Ditt namn" maxlength="20" required>
+																				</div>
+																	</div>
+																	<div class="row box_inputs">
+																				<div class="form_col_5">
+																							<label for="email" class="label_for_input">E - Mail</label>
+																				</div>
+																				<div class="form_col_7">
+																							<input type="email" id="email" name="email" class="input_form" placeholder="E - Mail">
+																				</div>
+																	</div>
+																	<div class="row box_inputs">
+																				<div class="form_col_5">
+																							<label for="rubrik" class="label_for_input">Rubrik/Ämne</label>
+																				</div>
+																				<div class="form_col_7">
+																							<div class="required">*</div>
+																							<input type="text" id="rubrik" name="rubrik" class="input_form" placeholder="Rubrik/Ämne" maxlength="20"  required>
+																				</div>
+																	</div>
+																	<div class="row box_inputs">
+																				<div class="form_col_12">
+																							<label for="meddelande" class="label_for_input">Meddelande</label>
+																							<div class="required_textarea">*</div>
+																							<textarea id="meddelande" name="meddelande" class="input_texarea" placeholder="Ditt meddelande"  required></textarea>
+																				</div>
+																	</div>
+														</fieldset>
+											</div>
+											<div class="form_col_6">
+														<fieldset>
+																	<legend>Beställning</legend>
+																	<div class="row box_inputs">
+																				<div class="form_col_3">
+																							<label for="bnamn" class="label_for_input">Namn</label>
+																				</div>
+																				<div class="form_col_6">
+																							<div class="required">*</div>
+																							<input type="text" id="bnamn" name="bnamn" class="input_form" placeholder="Namn"  required>			
+																					</div>
+																				<div class="form_col_2">
+																								<label for="order_id" class="label_for_input">ID: </label>
+																				</div>
+																				<div class="form_col_1">
+																							<input type="text" name="order_id" class="input_form_bid" disabled>
+																				</div>
+																	</div>			
+																	<div class="row box_inputs">																								
+																				<div class="form_col_9">
+																							<div class="form_col_4">
+																										<label for="file_name" class="label_for_input">Filnamn</label>
+																							</div>
+																							<div class="form_col_8">
+																										<input type="text" id="file_name" name="file_name" class="input_form" placeholder="Filnamn">
+																							</div>
+																				</div>
+																				<div class="form_col_3">
+																							<button disabled>Ladda upp fil</button>
+																				</div>
+																	</div>
+														</fieldset>															
+														<div class="row box_order_nospam">
+																	<div class="form_col_8">
+																				<div class="row">
+																							<div class="form_col_8">
+																										<label for="no_spam" class="label_for_input">ReCaptcha --></label>
+																							</div>
+																							<div class="form_col_2">
+																										<input type="radio" id="input_form_radio" name="no_spam"  required>
+																							</div>
+																				</div>			
+																	</div>										
+																	<div class="form_col_4 ">
+																				<input type="submit" id="submit_button" name="submit" value="Skicka Meddelande!">
+																	</div>																		
+														</div>
+														<div classs="row">
+																	<div class="form_col_12">
+																				<!-- Här visas att ditt meddelande har gått iväg -->
+																				<iframe name="insert_formd" id="frame_form_data"></iframe>
+																	</div>
+														</div>
+												</div>
+								</div>
+					</form>
+			</body>
+</html>
